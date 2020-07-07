@@ -1,0 +1,47 @@
+html {
+	font-size: 10px;
+	font-family: 'Fondamento', cursive;
+	background-color:#B40404;
+}
+
+h1 {
+	margin: 0;
+	padding: 20px 0;
+	font-size: 60px;
+	text-shadow:2px 1px 20px #B40404;/*1.horizontaler Versatz nach rechts (negative Zahl nach links), 2. vertikaler Versatz nach untern (negative Zahl nach oben), 3. Pixelbereich indem der Schatten verwischt (größere Zahle=leichterer Schatten)*/
+	text-align: center;
+	color: #B40404;
+}
+
+body {
+	width: 800px; /*legt die breite des body fest*/
+	margin: 0 auto;/*Außenabstand(außerhalb des Rahmens).Der erste Wert steht für den Abstand nach oben und der zweite für den Abstand nach links und rechts*/
+	background-color: black;
+	padding: 0 300px 300px 300px;/*Der Abstand direkt um den Inhalt drumherum. Der erste Wert steht für den Abstand nach oben und der zweite/dritte für den Abstand nach links und rechts und der vierte für den nach unten*/
+	border: 5px solid white;/*Ein Rahmen direkt um den padding*/
+}
+
+
+p {
+	font-size: 25px;
+	line-height: 2;
+	letter-spacing: 1px;
+	text-align: center;
+	color: white;
+}
+
+li {
+	font-size: 20px;
+	color: white;
+}
+
+img {
+	display: block;/*Bilder sind keine Blöcke, hiermit wird ein Block für das Bild "gebaut"*/
+	margin: 0 auto;
+	width: 95%;
+}
+
+a{
+	display: block;
+	text-align:center;
+}

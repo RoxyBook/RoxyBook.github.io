@@ -1,16 +1,16 @@
 html {
 	font-size: 10px;
 	font-family: 'Fondamento', cursive;
-	background-color:#B40404;
+	background-color: #4e0505;
 }
 
 h1 {
 	margin: 0;
 	padding: 20px 0;
 	font-size: 60px;
-	text-shadow:2px 1px 20px #B40404;/*1.horizontaler Versatz nach rechts (negative Zahl nach links), 2. vertikaler Versatz nach untern (negative Zahl nach oben), 3. Pixelbereich indem der Schatten verwischt (größere Zahle=leichterer Schatten)*/
+	text-shadow:2px 1px 20px #4e0505;/*1.horizontaler Versatz nach rechts (negative Zahl nach links), 2. vertikaler Versatz nach untern (negative Zahl nach oben), 3. Pixelbereich indem der Schatten verwischt (größere Zahle=leichterer Schatten)*/
 	text-align: center;
-	color: #B40404;
+	color: #4e0505;
 }
 
 body {

@@ -115,6 +115,11 @@ function deleteTodo() {
         localStorage.setItem("toDoList", JSON.stringify(liste));
         let listItemIndex = toDoList.childNodes.item(deleteIndex);
         toDoList.removeChild(listItemIndex);
+        let allToDo = document.getElementById("toDo");
+        while (allToDo.firstChild) {
+            allToDo.removeChild(allToDo.lastChild);
+        }
+        zeichneListe();
     }
 }
 

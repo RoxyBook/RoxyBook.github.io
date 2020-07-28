@@ -68,7 +68,17 @@ button {
     line-height: 2px;
     letter-spacing: 1px;
     text-align: center;
-    color: #7d0617;
+    color: #fafafa;
+
+}
+
+#yourResult {
+    margin-top: 2em;
+    font-size: 20px;
+    line-height: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgb(250, 248, 248);
 
 }
 
@@ -86,6 +96,13 @@ button {
     margin: 0 auto;
     color: #7d0617;
 }
+
+#result {
+    display: block;
+    margin-top: 5em;
+    color: #7d0617;
+}
+
 
 #toDo {
     padding: 0;

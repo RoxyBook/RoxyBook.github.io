@@ -55,13 +55,34 @@ function calculater() {
     let randomNumberOne = Math.floor(Math.random() * 10 + 1); //random gibt uns nur Zahlen zwischen 0 und 1. Um Zahlen zwischen 0 und 9 zu bekommen, muss mit 10 multipliziert werden, +1 sorgt dafür, dass auch die 10 genutzt werden kann. floor() ignoriert die Nachkommastellen
     let randomNumberTwo = Math.floor(Math.random() * 10 + 1);
     let rechnung = document.createElement("div");
+
     rechnung.id = "calculater";
     //rechnung.setAttribute("id", "calculater"); -> alternative auch für andere Attribute
-    rechnung.textContent = "Berechne: " + randomNumberOne + " + " + randomNumberTwo + " = " + (randomNumberOne + randomNumberTwo);
+    rechnung.textContent = "Calculate: " + randomNumberOne + " + " + randomNumberTwo + " = " + "?";
     document.querySelector("#calculaterIntroduction").after(rechnung);
+
 }
 
 calculater();
+
+let resultButton = document.querySelector("#result");
+resultButton.onclick = function () {
+    setResult();
+}
+
+function setResult() {
+    let yourResult = prompt("Write your result!");
+    resultOfCalculater(yourResult);
+
+}
+
+function resultOfCalculater(yourResult) {
+    let result = document.createElement("div");
+    result.id = "yourResult";
+    result.textContent = "Your result: " + yourResult;
+    document.querySelector("#calculater").after(result);
+}
+
 
 let toDoButton = document.querySelector("#whatDoYouWantToDo");
 let toDoList = document.querySelector("#toDo");

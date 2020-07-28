@@ -1,47 +1,98 @@
 html {
-	font-size: 10px;
-	font-family: 'Fondamento', cursive;
-	background-color: #4e0505;
+    font-size: 10px;
+    font-family: 'Fondamento', cursive;
+    background-color: rgb(43, 2, 2);
 }
 
 h1 {
-	margin: 0;
-	padding: 20px 0;
-	font-size: 60px;
-	text-shadow:2px 1px 20px #4e0505;/*1.horizontaler Versatz nach rechts (negative Zahl nach links), 2. vertikaler Versatz nach untern (negative Zahl nach oben), 3. Pixelbereich indem der Schatten verwischt (größere Zahle=leichterer Schatten)*/
-	text-align: center;
-	color: #820505;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 60px;
+    text-shadow: 2px 1px 20px #7d0617; /*1.horizontaler Versatz nach rechts (negative Zahl nach links), 2. vertikaler Versatz nach untern (negative Zahl nach oben), 3. Pixelbereich indem der Schatten verwischt (größere Zahle=leichterer Schatten)*/
+    text-align: center;
+    color: #7d0617;
 }
 
 body {
-	width: 800px; /*legt die breite des body fest*/
-	margin: 0 auto;/*Außenabstand(außerhalb des Rahmens).Der erste Wert steht für den Abstand nach oben und der zweite für den Abstand nach links und rechts*/
-	background-color: black;
-	padding: 0 300px 300px 300px;/*Der Abstand direkt um den Inhalt drumherum. Der erste Wert steht für den Abstand nach oben und der zweite/dritte für den Abstand nach links und rechts und der vierte für den nach unten*/
-	border: 5px solid white;/*Ein Rahmen direkt um den padding*/
+    width: 800px; /*legt die breite des body fest*/
+    margin: 0 auto; /*Außenabstand(außerhalb des Rahmens).Der erste Wert steht für den Abstand nach oben und der zweite für den Abstand nach links und rechts*/
+    background-color: black;
+    padding: 0 300px 300px 300px; /*Der Abstand direkt um den Inhalt drumherum. Der erste Wert steht für den Abstand nach oben und der zweite/dritte für den Abstand nach links und rechts und der vierte für den nach unten*/
+    border: 5px solid white; /*Ein Rahmen direkt um den padding*/
 }
 
 
-p {
-	font-size: 25px;
-	line-height: 2;
-	letter-spacing: 1px;
-	text-align: center;
-	color: white;
+#introduction {
+    font-size: 25px;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
 }
 
 li {
-	font-size: 20px;
-	color: white;
+    font-size: 20px;
+    color: white;
 }
 
 img {
-	display: block;/*Bilder sind keine Blöcke, hiermit wird ein Block für das Bild "gebaut"*/
-	margin: 0 auto;
-	width: 95%;
+    display: block; /*Bilder sind keine Blöcke, hiermit wird ein Block für das Bild "gebaut"*/
+    margin: 0 auto;
+    width: 95%;
 }
 
-a{
-	display: block;
-	text-align:center;
+a {
+    display: block;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    color: #7d0617;
+    border-radius: 15px;
+}
+
+#calculaterIntroduction {
+    margin-top: 2em;
+    font-size: 25px;
+    line-height: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #7d0617;
+}
+
+#calculater {
+    margin-top: 2em;
+    font-size: 20px;
+    line-height: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #7d0617;
+
+}
+
+#doSomethingWithRoxy {
+    margin-top: 4em;
+    font-size: 25px;
+    line-height: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #7d0617;
+}
+
+#whatDoYouWantToDo {
+    display: block;
+    margin: 0 auto;
+    color: #7d0617;
+}
+
+#toDo {
+    padding: 0;
+    margin-top: 2em;
+    font-size: 20px;
+    line-height: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #7d0617;
 }

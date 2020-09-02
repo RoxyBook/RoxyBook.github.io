@@ -2,6 +2,7 @@ html {
     font-size: 10px;
     font-family: 'Fondamento', cursive;
     background-color: rgb(43, 2, 2);
+    color: #fafafa;
 }
 
 h1 {
@@ -27,12 +28,10 @@ body {
     line-height: 2;
     letter-spacing: 1px;
     text-align: center;
-    color: white;
 }
 
 li {
     font-size: 20px;
-    color: white;
 }
 
 img {
@@ -48,38 +47,39 @@ a {
 
 button {
     display: block;
-    margin: 0 auto;
+    margin: 0.5em auto;
     color: #7d0617;
     border-radius: 15px;
+    background-color: #000;
 }
 
-#calculaterIntroduction {
-    margin-top: 2em;
+#calculatorIntroduction {
+    margin-top: 20px;
+    margin-bottom: 10px;
     font-size: 25px;
-    line-height: 2px;
     letter-spacing: 1px;
     text-align: center;
     color: #7d0617;
 }
 
-#calculater {
-    margin-top: 2em;
+#calculator {
     font-size: 20px;
-    line-height: 2px;
     letter-spacing: 1px;
     text-align: center;
-    color: #fafafa;
-
 }
 
-#yourResult {
-    margin-top: 2em;
+.result {
     font-size: 20px;
-    line-height: 2px;
     letter-spacing: 1px;
     text-align: center;
-    color: rgb(250, 248, 248);
+}
 
+.right {
+    color: rgb(129, 246, 11);
+}
+
+.false {
+    color: rgb(186, 6, 6);
 }
 
 #doSomethingWithRoxy {
@@ -91,25 +91,12 @@ button {
     color: #7d0617;
 }
 
-#whatDoYouWantToDo {
-    display: block;
-    margin: 0 auto;
-    color: #7d0617;
-}
-
-#result {
-    display: block;
-    margin-top: 5em;
-    color: #7d0617;
-}
-
-
 #toDo {
+    width: 75px;
+    margin: 1rem auto;
     padding: 0;
-    margin-top: 2em;
     font-size: 20px;
-    line-height: 2px;
     letter-spacing: 1px;
     text-align: center;
-    color: #7d0617;
+    color: #fafafa;
 }

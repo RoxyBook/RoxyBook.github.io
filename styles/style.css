@@ -82,7 +82,7 @@ button {
     color: rgb(186, 6, 6);
 }
 
-#doSomethingWithRoxy {
+#doSomethingWithRoxy, #calcu {
     margin-top: 4em;
     font-size: 25px;
     line-height: 2px;
@@ -100,3 +100,5 @@ button {
     text-align: center;
     color: #fafafa;
 }
+
+

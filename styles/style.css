@@ -5,6 +5,19 @@ html {
     color: #fafafa;
 }
 
+.menu {
+    position: absolute; /*position absolut schaut immer welcher höher gelegene Knoten als erster nicht die norm position static hat und benutzt diesen als bezugspunkt*/
+    left: 0px; /*zum verschieben des inhaltes*/
+    text-align: left;
+    color: #7d0617;
+    font-size: 30px;
+}
+
+.content {
+
+    text-align: center;
+}
+
 h1 {
     margin: 0;
     padding: 20px 0;
@@ -15,13 +28,13 @@ h1 {
 }
 
 body {
-    width: 800px; /*legt die breite des body fest*/
+    position: relative; /*die standart Position ist static und mit position relativ kann ich den Inhalt relativ zur staticposition verschieben.*/
+    width: 800px; /*legt die Breite fest*/
+    padding: 0 300px 300px 300px; /*Der Abstand direkt um den Inhalt drumherum. Der erste Wert steht für den Abstand nach oben und der zweite/dritte für den Abstand nach links und rechts und der vierte für den nach unten*/
     margin: 0 auto; /*Außenabstand(außerhalb des Rahmens).Der erste Wert steht für den Abstand nach oben und der zweite für den Abstand nach links und rechts*/
     background-color: black;
-    padding: 0 300px 300px 300px; /*Der Abstand direkt um den Inhalt drumherum. Der erste Wert steht für den Abstand nach oben und der zweite/dritte für den Abstand nach links und rechts und der vierte für den nach unten*/
     border: 5px solid white; /*Ein Rahmen direkt um den padding*/
 }
-
 
 #introduction {
     font-size: 25px;
@@ -51,6 +64,17 @@ button {
     color: #7d0617;
     border-radius: 15px;
     background-color: #000;
+    font-family: 'Fondamento', cursive;
+}
+
+#doButton {
+    margin-top: 5em;
+    font-size: 23px;
+    font-family: 'Fondamento', cursive;
+}
+
+.hidden {
+    display: none;
 }
 
 #calculatorIntroduction {
@@ -82,7 +106,16 @@ button {
     color: rgb(186, 6, 6);
 }
 
-#doSomethingWithRoxy, #calcu {
+#doSomethingWithRoxy {
+    margin-top: 4em;
+    font-size: 60px;
+    line-height: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #7d0617;
+}
+
+#calcu {
     margin-top: 4em;
     font-size: 25px;
     line-height: 2px;
@@ -100,5 +133,3 @@ button {
     text-align: center;
     color: #fafafa;
 }
-
-

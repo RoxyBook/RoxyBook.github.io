@@ -1,5 +1,5 @@
 <!DOCTYP html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet" type="text/css">
@@ -7,7 +7,22 @@
         <title>Roxy Book</title>
     </head>
     <body>
-        <div class="menu">Menu</div>
+
+        <div class="menu">
+            <div id="menuButton" class="menu">
+                <span class="menu text">Menu</span>
+
+                <div class="dropDownMenu">
+                    <div class="dropDownMenuItem">
+                        <a id="toDoListLink" href="todo.html">Do something with Roxy!</a>
+                    </div>
+                    <div class="dropDownMenuItem">
+                        <a id=calculatorLink href="calculator.html">Calculating with Roxy!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="roxy" class="content">
             <h1>The world of Roxy Book</h1>
             <button>Who are you?</button>
@@ -21,21 +36,11 @@
                 <li>Hatched in Black Marsh</li>
                 <li>Born under the sign of shadow</li>
             </ul>
-            <button id=doButton>Do something with Roxy!</button>
         </div>
-        <div id="toDoListFunction" class="hidden">
-            <p id="doSomethingWithRoxy">Do something with Roxy!</p>
-            <button id="whatDoYouWantToDo">What do you want to do?</button>
-            <ol id="toDo">
-            </ol>
-            <button id="delete">Delete your todo!</button>
-            <button id="back">Back!</button>
-        </div>
-        <a id=calcu href="calculator.html">Calculating with Roxy!</a>
+
         <script src="scripts/userName.js"></script>
         <script src="scripts/pictures.js"></script>
         <script src="scripts/gimmicks.js"></script>
-        <script src="scripts/todo.js"></script>
         <script src="scripts/main.js"></script>
     </body>
 </html>

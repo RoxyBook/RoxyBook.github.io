@@ -7,6 +7,9 @@ function Calculator() {
 
     this.newExerciseButton = document.querySelector("#newIntroduction");
     this.newExerciseButton.addEventListener("click", () => this.newExercise());
+
+    this.backButton = document.querySelector("#back");
+    this.backButton.addEventListener("click", () => this.back());
 }
 
 Calculator.prototype.giveRandomNumber = function () {
@@ -62,5 +65,10 @@ Calculator.prototype.newExercise = function () {
     body.removeChild(document.getElementById("calculator"));
 
     this.mathProblem();
+}
+
+Calculator.prototype.back = function () {
+    open("./index.html");
+
 }
 

@@ -1,20 +1,14 @@
 function Todo() {
     this.toDoList = document.querySelector("#toDo");
     this.liste = [];
-    this.toDoListFunction = document.querySelector("#toDoListFunction");
-    this.roxy = document.querySelector("#roxy");
 
-    this.doButton = document.querySelector("#doButton");
     this.toDoButton = document.querySelector("#whatDoYouWantToDo");
-    this.deleteButton = document.querySelector("#delete");
-    this.backButton = document.querySelector("#back");
-//Damit die Buttons gehen
-    this.doButton.addEventListener("click", () => this.showToDoListFunction());
-
     this.toDoButton.addEventListener("click", () => this.setToDo());
 
+    this.deleteButton = document.querySelector("#delete");
     this.deleteButton.addEventListener("click", () => this.deleteTodo());
 
+    this.backButton = document.querySelector("#back");
     this.backButton.addEventListener("click", () => this.back());
 }
 
@@ -53,14 +47,8 @@ Todo.prototype.zeichneListe = function () {
             newp.textContent = this.liste[i];
         }
     }
-}
+    Todo.prototype.back = function () {
+        open("./index.html");
 
-Todo.prototype.showToDoListFunction = function () {
-    this.toDoListFunction.classList.remove("hidden");
-    this.roxy.classList.add("hidden");
-}
-
-Todo.prototype.back = function () {
-    this.toDoListFunction.classList.add("hidden");
-    this.roxy.classList.remove("hidden");
+    }
 }
